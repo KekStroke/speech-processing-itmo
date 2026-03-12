@@ -8,7 +8,7 @@ I first compared three feature settings:
 - `n_mels = 40`
 - `n_mels = 80`
 
-![Comparison of 20, 40 and 80 mel filterbanks](figures\mels_comparison.png)
+![Comparison of 20, 40 and 80 mel filterbanks](figures/mels_comparison.png)
 
 ### Main observations
 
@@ -41,7 +41,7 @@ In the second part, I fixed `n_mels = 80` and varied the `groups` parameter in `
 - `groups = 4`
 - `groups = 8`
 
-![Group convolution analysis for 80 mel filterbanks](figures\groups_analysis.png)
+![Group convolution analysis for 80 mel filterbanks](figures/groups_analysis.png)
 
 ### Main observations
 
