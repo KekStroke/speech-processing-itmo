@@ -1,0 +1,35 @@
+[project]
+name = "speech-processing"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "lightning>=2.6.1",
+    "matplotlib>=3.10.8",
+    "scipy>=1.17.1",
+    "setuptools>=75.0.0,<80",
+    "soundfile>=0.13.1",
+    "tensorboard>=2.20.0",
+    "tensorboardx>=2.6.4",
+    "torch>=2.10.0",
+    "torchaudio>=2.10.0",
+    "torchcodec>=0.10.0",
+    "torchvision>=0.25.0",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cu130" },
+]
+torchvision = [
+  { index = "pytorch-cu130" },
+]
+torchaudio = [
+  { index = "pytorch-cu130" },
+]
